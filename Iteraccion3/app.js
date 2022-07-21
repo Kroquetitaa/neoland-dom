@@ -6,3 +6,11 @@ let button = document.querySelector('#btnToClick');
 button.addEventListener('click', e => {
     console.log( e );
 })
+
+// 1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input.
+
+let inputOne = document.querySelector('.focus');
+
+inputOne.addEventListener('focus', e => {
+    console.log( e );
+})
