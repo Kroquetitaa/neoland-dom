@@ -66,3 +66,12 @@ let divs = document.querySelectorAll('div');
 body.insertBefore( paragraph3, divs[1] );
 console.log( body );
 
+// 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
+
+let divs = document.querySelectorAll('div.fn-insert-here');
+
+divs.forEach( element  => {
+    let paragraph4 = document.createElement('p');
+    paragraph4.innerHTML = 'Voy dentro';
+    element.appendChild( paragraph4 );
+});
