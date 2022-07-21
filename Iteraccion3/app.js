@@ -14,3 +14,11 @@ let inputOne = document.querySelector('.focus');
 inputOne.addEventListener('focus', e => {
     console.log( e );
 })
+
+// 1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
+
+let inputTwo = document.querySelector('.value');
+
+inputTwo.addEventListener('input', e => {
+    console.log( e );
+})
