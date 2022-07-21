@@ -57,3 +57,12 @@ for (const keys of removeItems) {
     body.removeChild( keys );
 }
 
+// 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
+// Recuerda que no solo puedes insertar elementos con .appendChild.
+
+let paragraph3 = document.createElement('p');
+paragraph3.innerHTML = 'Voy en medio!';
+let divs = document.querySelectorAll('div');
+body.insertBefore( paragraph3, divs[1] );
+console.log( body );
+
