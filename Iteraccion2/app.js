@@ -6,7 +6,8 @@ let div = document.createElement('div');
 body.append( div );
 console.log( body );
 
-// 2.1 Inserta dinamicamente en un html un div vacio con javascript.
+
+// 2.2 Inserta dinamicamente en un html un div vacio con javascript.
 
 let p = document.createElement('p');
 div.appendChild( p );
