@@ -36,3 +36,17 @@ let h2 = document.querySelector('.fn-insert-here');
 h2.innerHTML = 'Wubba Lubba dub dub';
 console.log( h2 );
 
+// 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
+
+const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+
+let listUl = document.createElement('ul');
+
+apps.forEach(( e ) => {
+    let listLi = document.createElement('li');
+    listLi.innerHTML = e;
+    listUl.appendChild( listLi );
+});
+
+console.log( listUl );
+
