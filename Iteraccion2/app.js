@@ -50,3 +50,10 @@ apps.forEach(( e ) => {
 
 console.log( listUl );
 
+// 2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
+
+let removeItems = document.querySelectorAll('.fn-remove-me');
+for (const keys of removeItems) {
+    body.removeChild( keys );
+}
+
